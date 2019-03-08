@@ -7,7 +7,8 @@
 //
 
 #import "Screens.h"
-#import "ViewController.h"
+#import "CatalogViewController.h"
+#import "CatalogViewModel.h"
 
 @interface Screens()
 @property (nonatomic, strong) UIStoryboard *storyBoard;
@@ -27,8 +28,10 @@
 
 - (UIViewController *)createCatalogViewController
 {
-    UIViewController *viewController = [self.storyBoard instantiateViewControllerWithIdentifier:@"ViewController"];
-    if ([viewController isKindOfClass:[ViewController class]]) {
+    CatalogViewController *viewController = [self.storyBoard instantiateViewControllerWithIdentifier:@"CatalogViewController"];
+    if ([viewController isKindOfClass:[CatalogViewController class]]) {
+        CatalogViewModel *viewModel = [[CatalogViewModel alloc] init];
+        viewController.viewModel = viewModel;
         return viewController;
     }
     return nil;

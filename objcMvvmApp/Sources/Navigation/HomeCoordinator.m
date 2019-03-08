@@ -32,6 +32,11 @@
 - (void)start
 {
     self.presenter.rootViewController = self.controller;
+    [self showCatalog];
+}
+
+- (void)showCatalog
+{
     UIViewController *viewController = [self.screens createCatalogViewController];
     self.controller.viewControllers = @[viewController];
 }
