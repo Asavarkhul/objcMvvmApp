@@ -14,6 +14,9 @@
 		2F6E667D2220381A00E3513A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6E667B2220381A00E3513A /* LaunchScreen.storyboard */; };
 		2F6E66802220381A00E3513A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E667F2220381A00E3513A /* main.m */; };
 		2F6E668A2220381A00E3513A /* objcMvvmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E66892220381A00E3513A /* objcMvvmAppTests.m */; };
+		2F6E669D2220395500E3513A /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E669C2220395500E3513A /* AppCoordinator.m */; };
+		2FE3C1432232B4F00089F970 /* HomeCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3C1422232B4F00089F970 /* HomeCoordinator.m */; };
+		2FE3C1472232BC510089F970 /* Screens.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE3C1462232BC510089F970 /* Screens.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		2F6E66852220381A00E3513A /* objcMvvmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcMvvmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6E66892220381A00E3513A /* objcMvvmAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcMvvmAppTests.m; sourceTree = "<group>"; };
 		2F6E668B2220381A00E3513A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6E669B2220395500E3513A /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		2F6E669C2220395500E3513A /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		2FE3C1412232B4F00089F970 /* HomeCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCoordinator.h; sourceTree = "<group>"; };
+		2FE3C1422232B4F00089F970 /* HomeCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCoordinator.m; sourceTree = "<group>"; };
+		2FE3C1452232BC510089F970 /* Screens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screens.h; sourceTree = "<group>"; };
+		2FE3C1462232BC510089F970 /* Screens.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Screens.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +90,9 @@
 		2F6E666F2220381800E3513A /* objcMvvmApp */ = {
 			isa = PBXGroup;
 			children = (
-				2F6E66702220381800E3513A /* AppDelegate.h */,
-				2F6E66712220381800E3513A /* AppDelegate.m */,
-				2F6E66732220381800E3513A /* ViewController.h */,
-				2F6E66742220381800E3513A /* ViewController.m */,
-				2F6E66762220381800E3513A /* Main.storyboard */,
-				2F6E66792220381A00E3513A /* Assets.xcassets */,
-				2F6E667B2220381A00E3513A /* LaunchScreen.storyboard */,
-				2F6E667E2220381A00E3513A /* Info.plist */,
 				2F6E667F2220381A00E3513A /* main.m */,
+				2F6E66952220384D00E3513A /* Sources */,
+				2F6E66962220385200E3513A /* Ressources */,
 			);
 			path = objcMvvmApp;
 			sourceTree = "<group>";
@@ -101,6 +104,50 @@
 				2F6E668B2220381A00E3513A /* Info.plist */,
 			);
 			path = objcMvvmAppTests;
+			sourceTree = "<group>";
+		};
+		2F6E66952220384D00E3513A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E66702220381800E3513A /* AppDelegate.h */,
+				2F6E66712220381800E3513A /* AppDelegate.m */,
+				2F6E669B2220395500E3513A /* AppCoordinator.h */,
+				2F6E669C2220395500E3513A /* AppCoordinator.m */,
+				2F6E66762220381800E3513A /* Main.storyboard */,
+				2FE3C1412232B4F00089F970 /* HomeCoordinator.h */,
+				2FE3C1422232B4F00089F970 /* HomeCoordinator.m */,
+				2FE3C1442232BC420089F970 /* Navigation */,
+				2F6E66972220389A00E3513A /* Catalog */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2F6E66962220385200E3513A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E66792220381A00E3513A /* Assets.xcassets */,
+				2F6E667B2220381A00E3513A /* LaunchScreen.storyboard */,
+				2F6E667E2220381A00E3513A /* Info.plist */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2F6E66972220389A00E3513A /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E66732220381800E3513A /* ViewController.h */,
+				2F6E66742220381800E3513A /* ViewController.m */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		2FE3C1442232BC420089F970 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2FE3C1452232BC510089F970 /* Screens.h */,
+				2FE3C1462232BC510089F970 /* Screens.m */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6E669D2220395500E3513A /* AppCoordinator.m in Sources */,
+				2FE3C1432232B4F00089F970 /* HomeCoordinator.m in Sources */,
 				2F6E66752220381800E3513A /* ViewController.m in Sources */,
+				2FE3C1472232BC510089F970 /* Screens.m in Sources */,
 				2F6E66802220381A00E3513A /* main.m in Sources */,
 				2F6E66722220381800E3513A /* AppDelegate.m in Sources */,
 			);
@@ -364,7 +414,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = objcMvvmApp/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = objcMvvmApp/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +431,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = objcMvvmApp/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = objcMvvmApp/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
